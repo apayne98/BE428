@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="mh.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">PregnancyBuddy</a>
+      <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  ​
+      <div class="collapse navbar-collapse" id="main-navigation">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto"
+  ​
+        <form class="form-inline">
+  ​
+          <a href="basic.html" class="btn btn-outline-light" role="button">Sign out</a>
+        </form>
+  ​
+        </ul>
+      </div>
+    </nav>
+
+  <form class="p-3" id="live_form"> <!--QUESTIONS-->
+    <div class="header">
+      <h1>Medical History</h1>
+    </div>
+    <div class="container-fluid col-md-6"> <!-- general feeling 1 -->
+        <label for="generalState1">1. How are you feeling today?</label>
+        <input type="text" class="form-control" id="generalState1" placeholder="">
+      </div>
+
+      <div class="container-fluid col-md-6"> <!-- general feeling 2 -->
+          <label for="generalState2">2. How are you feeling about being pregnant?</label>
+          <input type="text" class="form-control" id="generalState2" placeholder="">
+        </div>
+
+        <div class="container-fluid col-md-6"> <!-- general feeling 3 -->
+            <label for="generalState3">3. Is this good timing for your pregnancy?</label>
+            <select class="form-control" id="generalState3">
+              <option selected>Choose...</option>
+              <option value="1">Yes</option>
+              <option value="2">No</option>
+              <option value="3">Tell me more</option>
+            </select>
+          </div>
+
+          <div class="container-fluid col-md-5" id="generalState3aDiv">
+            <label for="generalState3a">a. Please ellaborate...</label>
+            <input type="text" class="form-control" id="generalState3a" placeholder="">
+          </div>
+
+    <div class="container-fluid col-md-6">
+      <label for="generalState4">4. Have you had any changes in your appetite or sleep habits?</label>
+      <select class="form-control" id="generalState4">
+            <option selected>Choose...</option>
+            <option value="1">Yes</option>
+            <option value="2">No</option>
+      </select>
+    </div>
+
+    <div class="container-fluid col-md-5" id="generalState4aDiv">
+      <label for="generalState4a">a. What are they?</label>
+      <input type="text" class="form-control" id="generalState4a" placeholder="">
+    </div>
+
+    <div class="container-fluid col-md-6"> <!-- first pregnancy -->
+        <label for="FirstPreg">5. Is this your first pregnancy?</label>
+        <select class="form-control" id="FirstPreg">
+          <option selected>Choose...</option>
+          <option value="1">Yes</option>
+          <option value="2">No</option>
+        </select>
+      </div>
+
+      <div class="container-fluid col-md-5" id="NumPregDiv"> <!-- # pregnancy -->
+          <label for="NumPreg">a. How many times have you been pregnant?</label>
+          <input type="text" class="form-control" id="NumPreg" placeholder="">
+        </div>
+
+        <div class="container-fluid col-md-5" id="miscarriagesDiv"> <!-- miscarriages -->
+            <label for="miscarriages">b. Have any of your pregnancies resulted in miscarriages, stillbirths or early infant death?</label>
+            <select class="form-control" id="miscarriages">
+              <option selected>Choose...</option>
+              <option value="1">Yes</option>
+              <option value="2">No</option>
+            </select>
+          </div>
+
+          <div class="container-fluid col-md-4" id="NumMiscarriagesDiv"> <!-- # miscarriages -->
+              <label for="NumMiscarriages">How many and when?</label>
+              <input type="text" class="form-control" id="NumMiscarriages" placeholder="">
+            </div>
+
+            <div class="container-fluid col-md-5" id="EndLastDiv"> <!-- last pregnancy end -->
+                <label for="EndLast">c. When did your last pregnancy end?</label>
+                <input type="text" class="form-control" id="EndLast" placeholder="">
+              </div>
+
+              <div class="container-fluid col-md-5" id="fertilitytreatmentDiv"> <!-- fertility treatment -->
+                  <label for="fertilitytreatment">d. Did you have fertility treatment with your last pregnancy?</label>
+                  <select class="form-control" id="fertilitytreatment">
+                    <option selected>Choose...</option>
+                    <option value="1">Yes</option>
+                    <option value="2">No</option>
+                  </select>
+                </div>
+
+                <div class="container-fluid col-md-5" id="LiveBirthsProbDiv"> <!-- live births with problems -->
+                    <label for="LiveBirthsProb">e. Did your baby/babies have any health or medical problems at birth?</label>
+                    <select class="form-control" id="LiveBirthsProb">
+                      <option selected>Choose...</option>
+                      <option value="1">Yes</option>
+                      <option value="2">No</option>
+                      <option value="3">No live births</option>
+                    </select>
+                  </div>
+
+                  <div class="container-fluid col-md-4" id="WhatProbLiveBirthsDiv"> <!-- what problems -->
+                      <label for="WhatProbLiveBirths">What were they?</label>
+                      <input type="text" class="form-control" id="WhatProbLiveBirths" placeholder="">
+                    </div>
+
+                    <div class="container-fluid col-md-4" id= "BabyWeightDiv"> <!-- babies' weight -->
+                        <label for="BabyWeight">How much did your last baby/babies weigh at birth?</label>
+                        <input type="text" class="form-control" id="BabyWeight" placeholder=" lb">
+                      </div>
+
+                      <div class="container-fluid col-md-4" id = "WeeksPregDeliveryDiv"> <!-- #weeks pregnant at delivery -->
+                          <label for="WeeksPregDelivery">How many weeks pregnant were you at delivery?</label>
+                          <input type="text" class="form-control" id="WeeksPregDelivery" placeholder=" weeks">
+                        </div>
+
+                        <div class="container-fluid col-md-4" id = "EarlyLightDiv"> <!-- before 37weeks/light baby -->
+                            <label for="EarlyLight">Did you deliver any of your babies before 37 weeks gestation or did any of the babies weigh less than 5 pounds 8 ounces?</label>
+                            <select class="form-control" id="EarlyLight">
+                              <option selected>Choose...</option>
+                              <option value="1">Yes</option>
+                              <option value="2">No</option>
+                            </select>
+                          </div>
+
+                      <div class="container-fluid col-md-3" id = "YesEarlyLightDiv"> <!-- if yes how many  -->
+                          <label for="YesEarlyLight">How many?</label>
+                          <input type="text" class="form-control" id="YesEarlyLight" placeholder=" weeks or lb">
+                        </div>
+
+
+                        <div class="container-fluid col-md-5" id="CondLastDiv"> <!-- conditions in last pregnancy -->
+                            <label for="CondLast">f. Did you have gestational diabetes, high blood pressure, depression, or postpartum depression with your last pregnancy?</label>
+                            <select class="form-control" id="CondLast">
+                              <option selected>Choose...</option>
+                              <option value = "1">Yes</option>
+                              <option value = "2">No</option>
+                          </select>
+                        </div>
+                    <div class="container-fluid col-md-4" id = "YesCondLastDiv"> <!-- if yes conditions in last pregnancy -->
+                        <label for="YesCondLast">Please elaborate</label>
+                        <input type="text" class="form-control" id="YesCondLast" placeholder="">
+                      </div>
+
+                      <div class="container-fluid col-md-6" id = "DoctorDiv"> <!-- if saw a doctor -->
+                          <label for="Doctor">6. Have you seen a medical provider for this pregnancy?</label>
+                          <select class="form-control" id="Doctor">
+                            <option selected>Choose...</option>
+                            <option value = "1">Yes</option>
+                            <option value = "2">No</option>
+                          </select>
+                        </div>
+
+                      <div class="container-fluid col-md-5" id = "WhenDoctorDiv"> <!-- if saw a doctor when -->
+                          <label for="WhenDoctor">When did you first see your medical provider?</label>
+                          <input type="text" class="form-control" id="WhenDoctor" placeholder="mm/dd/yyyy">
+                        </div>
+
+                    <div class="container-fluid col-md-5" id = "DoctorInfoDiv"> <!-- if saw a doctor did they give info -->
+                        <label for="DoctorInfo">Has your medical provider told you about any health or medical concerns with your current pregnancy, such as high blood pressure, gestational diabetes, preterm labor, or pregnant with two or more babies?</label>
+                        <select class="form-control" id="DoctorInfo">
+                          <option selected>Choose...</option>
+                          <option value = "1">Yes</option>
+                          <option value = "2">No</option>
+                        </select>
+                      </div>
+                <div class="container-fluid col-md-6" id ="WeightBeforeDiv"> <!-- weight before pregnancy -->
+                    <label for="WeightBefore">7. How much did you weigh before this pregnancy (lb)?</label>
+                    <input type="text" class="form-control" id="WeightBefore" placeholder=" lb">
+                  </div>
+                      ​
+                <div class="container-fluid col-md-6" id ="HeightBeforeDiv"> <!-- height before pregnancy -->
+                    <label for="HeightBefore">8. What was your height before this pregnancy?</label>
+                    <input type="text" class="form-control" id="HeightBefore" placeholder=" in">
+                  </div>
+                    ​
+
+              <div class="container-fluid col-md-6" id = "OtherCondDiv"> <!-- other conditions -->
+                  <label for="OtherCond">9.Do you have any health problems or medical conditions not related to pregnancy?</label>
+                  <select class="form-control" id="OtherCond">
+                    <option selected>Choose...</option>
+                    <option value = "1">Yes</option>
+                    <option value = "2">No</option>
+                  </select>
+                </div>
+              <div class="container-fluid col-md-5" id="YesOtherCondDiv"> <!-- if yes other conditions -->
+                  <label for="YesOtherCond">What are they?</label>
+                  <input type="text" class="form-control" id="YesOtherCond" placeholder="">
+                </div>
+
+      <div class="container-fluid col-md-6" id = "MedicationsDiv"> <!-- medications -->
+          <label for="Medications">10. Are you currently taking any prescribed medications, over the counter medications, supplements,vitamins,and/or home remedies?</label>
+          <select class="form-control" id="Medications">
+            <option selected>Choose...</option>
+            <option value ="1">Yes</option>
+            <option value ="2">No</option>
+          </select>
+        </div>
+      <div class="container-fluid col-md-5" id = "YesMedicationsDiv"> <!-- if yes medications -->
+          <label for="YesMedications">What are they and how much/often do you take them?</label>
+          <input type="text" class="form-control" id="YesMedications" placeholder="">
+        </div>
+      <div class="container-fluid col-md-5" id = "MedsPrenatalDiv"> <!-- if yes medications and prenatal -->
+          <label for="MedsPrenatal">(If yes and has prenatal care provider)Have you discussed taking these during pregnancy with your prenatal care provider?</label>
+          <select class="form-control" id="Medications">
+            <option selected>Choose...</option>
+            <option value ="1">Yes</option>
+            <option value ="2">No</option>
+          </select>
+        </div>
+
+  <div class="container-fluid col-md-6" id="DentistDiv"> <!-- dentist -->
+      <label for="Dentist">11. When was the last time you saw a dentist?</label>
+      <input type="text" class="form-control" id="Dentist" placeholder="">
+    </div>
+
+  <div class="container-fluid col-md-6" id="IfProbGumsDiv"> <!-- if problems with gums -->
+      <label for="IfProbGums">12. Do you have any problems with your teeth or gums that affect how you eat?</label>
+      <select class="form-control" id="IfProbGums">
+        <option selected>Choose...</option>
+        <option value = "1">Yes</option>
+        <option value = "2">No</option>
+      </select>
+    </div>
+  <div class="container-fluid col-md-5" id ="ProbGumsDiv"> <!-- what gum problems -->
+      <label for="ProbGums">What are they?</label>
+      <input type="text" class="form-control" id="ProbGums" placeholder="">
+    </div>
+
+  <div class="container-fluid col-md-6" id = "IfTobaccoDiv"> <!-- tobacco nicotine -->
+      <label for="IfTobacco">13. Have you ever smoked or used tobacco or nicotine products? </label>
+      <select class="form-control" id="IfTobacco">
+        <option selected>Choose...</option>
+        <option value ="1">Yes</option>
+        <option value ="2">No</option>
+      </select>
+    </div>
+
+    <div class="container-fluid col-md-5" id = "IfTobaccod3Div"> <!-- used during first 3 months -->
+        <label for="IfTobacco3">a. Did you use tobacco or nicotine during the three months before you became pregnant?</label>
+        <select class="form-control" id="IfTobacco3">
+          <option selected>Choose...</option>
+          <option value ="1">Yes</option>
+          <option value ="2">No</option>
+        </select>
+      </div>
+    <div class="container-fluid col-md-5" id = "IfTobacconowDiv"> <!-- using tobacco now -->
+        <label for="IfTobacconow">b. Are you currently using tobacco or nicotine?</label>
+        <select class="form-control" id="IfTobacconow">
+          <option selected>Choose...</option>
+          <option value = "1">Yes</option>
+          <option value = "2">No</option>
+        </select>
+      </div>
+    <div class="container-fluid col-md-4" id ="QuitTobaccoDiv"> <!-- trying to quit-->
+        <label for="QuitTobacco">Are you trying to quit?</label>
+        <select class="form-control" id="QuitTobacco">
+          <option selected>Choose...</option>
+          <option value = "1">Yes</option>
+          <option value = "2">No</option>
+        </select>
+      </div>
+
+      <div class="container-fluid col-md-6" id ="AnyoneSmoke"> <!-- anyone else smoking-->
+          <label for="AnyoneSmoke">14. Does anyone smoke inside your home and/or car?</label>
+          <select class="form-control" id="AnyoneSmoke">
+            <option selected>Choose...</option>
+            <option value = "1">Yes</option>
+            <option value = "2">No</option>
+          </select>
+        </div>
+  <div class="container-fluid col-md-6" id ="LastAlcoholDiv"> <!-- last alcohol -->
+      <label for="LastAlcohol">15. When was the last time you drank alcohol?</label>
+      <input type="text" class="form-control" id="LastAlcohol" placeholder="">
+    </div>
+
+    <div class="container-fluid col-md-6" id ="AlcoholNowDiv"> <!-- drinking alcohol now -->
+        <label for="AlcoholNow">16. Are you currently drinking alcohol?</label>
+        <select class="form-control" id="AlcoholNow">
+          <option selected>Choose...</option>
+          <option value = "1">Yes</option>
+          <option value = "2">No</option>
+        </select>
+      </div>
+
+    <div class="container-fluid col-md-5" id="AlcoholNowQuitDiv"> <!-- of yes alcohol want to quit -->
+        <label for="AlcoholNowQuit"> a. Are you trying to stop?</label>
+        <select class="form-control" id="AlcoholNowQuit">
+          <option selected>Choose...</option>
+          <option value = "1">Yes</option>
+          <option value = "2">No</option>
+        </select>
+      </div>
+
+      <div class="container-fluid col-md-6" id="DrugsEverDiv"> <!-- of yes alcohol want to quit -->
+          <label for="DrugsEver"> 17. Have you ever used illicit drugs?</label>
+          <select class="form-control" id="DrugsEver">
+            <option selected>Choose...</option>
+            <option value = "1">Yes</option>
+            <option value = "2">No</option>
+          </select>
+        </div>
+
+        <div class="container-fluid col-md-5" id ="LastDrugsDiv"> <!-- last time drugs -->
+            <label for="LastDrugs">a. When was the last time you used illicit drugs?</label>
+            <input type="text" class="form-control" id="LastDrugs" placeholder="">
+          </div>
+
+          <div class="container-fluid col-md-5" id = "DrugsNowDiv"> <!-- using drugs now -->
+              <label for="DrugsNow">b. Are you currently using drugs?</label>
+              <select class="form-control" id="DrugsNow">
+                <option selected>Choose...</option>
+                <option value = "1">Yes</option>
+                <option value = "2">No</option>
+              </select>
+            </div>
+
+            <div class="container-fluid col-md-4" id="DrugsNowQuitDiv"> <!-- of yes drugs want to quit -->
+                <label for="DrugsNowQuit"> Are you trying to stop?</label>
+                <select class="form-control" id="DrugsNowQuit">
+                  <option selected>Choose...</option>
+                  <option value = "1">Yes</option>
+                  <option value = "2">No</option>
+                </select>
+              </div>
+            <div class="container-fluid col-md-3" id="DrugsNowQuitYesDiv"> <!-- of yes drugs want help to quit -->
+                <label for="DrugsNowQuitYes"> Are you interested in getting help to stop?</label>
+                <select class="form-control" id="DrugsNowQuitYes">
+                  <option selected>Choose...</option>
+                  <option value = "1">Yes</option>
+                  <option value = "2">No</option>
+                </select>
+              </div>
+
+              <div class="container-fluid col-md-6" id ="PartnearThreatDiv"> <!-- partner -->
+                  <label for="PartnearThreat"> 18. In the last year, has your partner or FOB physically threatened or tried to hurt you?</label>
+                  <select class="form-control" id="PartnearThreat">
+                    <option selected>Choose...</option>
+                    <option value = "1">Yes</option>
+                    <option value = "2">No</option>
+                  </select>
+                </div>
+              <div class="container-fluid col-md-5" id ="PartnerThreatYesDiv"> <!-- yes partner threat -->
+                  <label for="PartnerThreatYes">a. Please elaborate.</label>
+                  <input type="text" class="form-control" id="PartnerThreatYes" placeholder="">
+                </div>
+      <div class="container-fluid col-md-6" id ="IfDepressedDiv"> <!-- if depressed -->
+          <label for="IfDepressed">19. In the last month, have you felt down, depressed, or hopeless?</label>
+          <select class="form-control" id="IfDepressed">
+            <option selected>Choose...</option>
+            <option value = "1">Yes</option>
+            <option value = "2">No</option>
+          </select>
+        </div>
+      <div class="container-fluid col-md-5" id ="DepressedDiv"> <!-- depressed -->
+          <label for="Depressed">Client needs standardized depression screening tool completed.</label>
+        </div>
+
+        <div class="container-fluid col-md-6" id ="CounselingDiv"> <!-- if got counseling -->
+            <label for="Counseling">20. Have you ever received mental health services or counseling?</label>
+            <select class="form-control" id="Counseling">
+              <option selected>Choose...</option>
+              <option value = "1">Yes</option>
+              <option value = "2">No</option>
+            </select>
+          </div>
+        <div class="container-fluid col-md-5" id="CounselingYesDiv"> <!-- got counseling -->
+            <label for="CounselingYes">Client needs clinical assessment.</label>
+          </div>
+
+          <div class="container-fluid col-md-6" id="IfSupportDiv"> <!-- if support -->
+              <label for="IfSupport">21. Is there someone you can count on for help/support during this pregnancy?</label>
+              <select class="form-control" id="IfSupport">
+                <option selected>Choose...</option>
+                <option value = "1">Yes</option>
+                <option value = "2">No</option>
+              </select>
+            </div>
+          <div class="container-fluid col-md-5" id="SupportNoDiv"> <!-- no support -->
+              <label for="SupportNo">Client needs clinical assessment.</label>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="container-fluid col-md-6">
+      <label for="seeAnotherFieldGroup">Do You Want To See Another Group of Fields?</label>
+      <select class="form-control" id="seeAnotherFieldGroup">
+            <option value="no">Not Particularly.</option>
+            <option value="yes">I Guess!</option>
+      </select>
+    </div>
+
+    <div class="container-fluid col-md-6" id="otherFieldGroupDiv">
+      <div class="row">
+        <div class="col-md-6">
+          <label for="otherField1">Group: Heres One!</label>
+          <input type="text" class="form-control w-10" id="otherField1">
+        </div>
+        <div class="col-md-6">
+          <label for="otherField2">Group: Another One!</label>
+          <input type="text" class="form-control w-100" id="otherField2">
+        </div>
+      </div>
+    </div>
+  </form>
+
+
+
+
+
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    <script src="medical_history.js"></script>
+  </body>
+</html>
